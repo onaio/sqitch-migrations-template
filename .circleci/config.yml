@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  build:
+    parallelism: 1
+    environment:
+      DATABASE_URL: postgis://sqitch@localhost/sqitch_test
+    docker:
+      - image: circleci/ruby:2.4-node-browsers
+        environment:
+          RAILS_ENV: test
+          PGHOST: 127.0.0.1
+          PGUSER: sqitch
+      - image: circleci/postgres:12-postgis
+        environment:
+          POSTGRES_USER: sqitch
+          POSTGRES_DB: sqitch_test
+          POSTGRES_PASSWORD: secret
+    steps:
+      - checkout
+      - run: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run: sudo apt-get update -y
+      - run: sudo apt install -y sqitch libdbd-pg-perl postgresql-client
+      - run: psql -h localhost -U sqitch -d sqitch_test -c "SELECT 1 AS COL;"
+      # run tests
+      - run: find . -iname sqitch.conf -print0 | sort -zn | xargs -I {} -0 bash -c 'cd `dirname {}` && pwd && sqitch deploy sqitch_test && sqitch verify sqitch_test'
+      - run: find . -iname sqitch.conf -print0 | sort -znr | xargs -I {} -0 bash -c 'cd `dirname {}` && pwd && sqitch revert -y sqitch_test'
