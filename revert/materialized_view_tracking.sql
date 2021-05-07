@@ -1,4 +1,4 @@
--- Revert unicef_philippines:materialized_view_tracking from pg
+-- Revert project_name:materialized_view_tracking from pg
 
 BEGIN;
 

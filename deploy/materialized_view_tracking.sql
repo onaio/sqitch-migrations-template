@@ -1,4 +1,4 @@
--- Deploy unicef_philippines:materialized_view_tracking to pg
+-- Deploy project_name:materialized_view_tracking to pg
 
 BEGIN;
 

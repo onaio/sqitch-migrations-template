@@ -1,4 +1,4 @@
--- Verify unicef_philippines:materialized_view_tracking on pg
+-- Verify project_name:materialized_view_tracking on pg
 
 BEGIN;
 

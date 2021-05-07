@@ -1,4 +1,4 @@
--- Verify unicef_philippines:add_refresh_function on pg
+-- Verify project_name:add_refresh_function on pg
 
 BEGIN;
 

@@ -1,4 +1,4 @@
--- Revert unicef_philippines:add_refresh_function from pg
+-- Revert project_name:add_refresh_function from pg
 
 BEGIN;
 
