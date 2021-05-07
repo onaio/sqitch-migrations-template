@@ -1,0 +1,6 @@
+%syntax-version=1.0.0
+%project=unicef_philippines
+%uri=https://github.com/onaio/data-solutions/tree/master/philippines/unicef-philippines
+
+add_refresh_function 2021-05-05T08:39:29Z root <root@kingsley-ThinkPad> # Creates function to refresh specific materialized views every 6hrs
+materialized_view_tracking 2021-05-07T07:19:25Z root <root@kingsley-ThinkPad> # Add materialized_view_tracking.

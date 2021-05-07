@@ -1,0 +1,14 @@
+---
+# Note - try to keep this in sync with .circleci/config.yml
+version: "3"
+services:
+  postgres:
+    image: circleci/postgres:12-postgis
+    environment:
+      POSTGRES_USER: sqitch
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: sqitch_test
+      PGHOST: /var/run/postgresql
+      PGUSER: sqitch
+    ports:
+      - 5432:5432
