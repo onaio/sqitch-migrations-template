@@ -1,4 +1,4 @@
--- Deploy unicef_philippines:add_refresh_function to pg
+-- Deploy project_name:add_refresh_function to pg
 -- requires: materialized_view_tracking
 
 BEGIN;

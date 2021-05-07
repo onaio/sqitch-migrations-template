@@ -1,5 +1,5 @@
-# UNICEF Philippines Data Migrations
-These database migrations can be used to set up the data warehouse for UNICEF Philippines.
+# ProjectName Data Migrations
+These database migrations can be used to set up the data warehouse for ProjectName.
 Changes to this data warehouse should be added to this sqitch project as new migrations.
 
 ## Testing Database migrations
