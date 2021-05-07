@@ -1,4 +1,4 @@
--- Deploy project_name:materialized_view_tracking to pg
+-- Deploy sqitch_migrations_template:materialized_view_tracking to pg
 
 BEGIN;
 

@@ -1,4 +1,4 @@
--- Deploy project_name:add_refresh_function to pg
+-- Deploy sqitch_migrations_template:add_refresh_function to pg
 -- requires: materialized_view_tracking
 
 BEGIN;

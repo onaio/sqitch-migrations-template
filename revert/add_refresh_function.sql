@@ -1,4 +1,4 @@
--- Revert project_name:add_refresh_function from pg
+-- Revert sqitch_migrations_template:add_refresh_function from pg
 
 BEGIN;
 

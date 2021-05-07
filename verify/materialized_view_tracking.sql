@@ -1,4 +1,4 @@
--- Verify project_name:materialized_view_tracking on pg
+-- Verify sqitch_migrations_template:materialized_view_tracking on pg
 
 BEGIN;
 

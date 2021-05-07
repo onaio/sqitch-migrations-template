@@ -1,4 +1,4 @@
--- Revert project_name:materialized_view_tracking from pg
+-- Revert sqitch_migrations_template:materialized_view_tracking from pg
 
 BEGIN;
 

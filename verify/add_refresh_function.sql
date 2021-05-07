@@ -1,4 +1,4 @@
--- Verify project_name:add_refresh_function on pg
+-- Verify sqitch_migrations_template:add_refresh_function on pg
 
 BEGIN;
 
